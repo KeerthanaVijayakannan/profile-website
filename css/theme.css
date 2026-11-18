@@ -1,0 +1,77 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #5b4b6e;
+  --color-primary-light: #8a78a3;
+  --color-primary-dark: #3e3250;
+
+  /* Accent */
+  --color-accent: #e58aa0;
+  --color-accent-strong: #d4617a;
+
+  /* Background Colors */
+  --color-bg: #fff6f0;
+  --color-bg-secondary: #fdeee8;
+  --color-bg-card: rgba(255, 255, 255, 0.82);
+  --glass: rgba(255, 255, 255, 0.62);
+  --glass-border: rgba(255, 255, 255, 0.92);
+
+  /* Text Colors */
+  --color-text: #4a3f55;
+  --color-text-secondary: #6b5e76;
+  --color-text-inverse: #ffffff;
+
+  /* Borders, shadows, overlays */
+  --color-border: #eadfe9;
+  --color-shadow: rgba(122, 90, 140, 0.16);
+  --color-overlay: rgba(74, 63, 85, 0.45);
+
+  /* Pastel palette (pin tints, chips) */
+  --pastel-pink: #fbd0da;
+  --pastel-peach: #fde0cd;
+  --pastel-butter: #fdf0cf;
+  --pastel-mint: #cfeadb;
+  --pastel-sky: #d3e6f6;
+  --pastel-lavender: #e0d6f5;
+
+  /* Watercolor washes (page background) */
+  --wash-pink: rgba(251, 200, 214, 0.9);
+  --wash-peach: rgba(253, 218, 196, 0.9);
+  --wash-butter: rgba(253, 238, 200, 0.9);
+  --wash-mint: rgba(196, 232, 212, 0.9);
+  --wash-sky: rgba(204, 227, 246, 0.9);
+  --wash-lavender: rgba(220, 208, 245, 0.9);
+
+  /* Family board warm accent */
+  --family-accent: #d9774f;
+
+  /* Botanical decor (corner blobs, flower sprigs) */
+  --blob-coral: #f4a6ae;
+  --blob-sage: #a9c8ae;
+  --blob-pink: #f6b6c8;
+  --leaf: #9bb89b;
+  --leaf-dark: #7f9f86;
+  --blossom: #f4a6b8;
+  --blossom-deep: #e98aa3;
+
+  /* Typography */
+  --font-primary: 'Segoe UI', 'Trebuchet MS', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Georgia', 'Times New Roman', serif;
+  --font-size-base: 16px;
+  --font-size-h1: 3.6rem;
+  --font-size-h2: 2.2rem;
+  --font-size-h3: 1.1rem;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Layout */
+  --max-width: 1240px;
+  --header-height: 4.5rem;
+  --border-radius: 12px;
+  --radius-card: 22px;
+  --radius-pill: 999px;
+  --transition-speed: 0.3s;
+}

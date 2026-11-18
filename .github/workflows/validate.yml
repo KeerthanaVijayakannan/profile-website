@@ -1,0 +1,55 @@
+
+name: Validate HTML & CSS
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - ci/setup-validation
+
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install HTMLHint and Stylelint
+        run: npm install -g htmlhint stylelint
+
+      - name: Validate HTML files
+        run: |
+          if compgen -G "*.html" > /dev/null; then
+            htmlhint "*.html" --config .htmlhintrc
+          else
+            echo "No HTML files to validate yet."
+          fi
+
+      - name: Validate CSS files
+        run: |
+          found=0
+
+          for file in css/*.css; do
+            [ -f "$file" ] || continue
+
+            if [ -s "$file" ]; then
+              found=1
+              stylelint "$file" --config .stylelintrc.json
+            fi
+          done
+
+          if [ "$found" -eq 0 ]; then
+            echo "No non-empty CSS files to validate yet."
+          fi
