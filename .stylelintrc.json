@@ -1,3 +1,4 @@
+
 {
   "rules": {
     "at-rule-no-unknown": true,
@@ -6,7 +7,6 @@
     "declaration-block-no-duplicate-properties": true,
     "property-no-unknown": true,
     "selector-pseudo-class-no-unknown": true,
-    "selector-pseudo-element-no-unknown": true,
-    "value-no-unknown": true
+    "selector-pseudo-element-no-unknown": true
   }
 }
