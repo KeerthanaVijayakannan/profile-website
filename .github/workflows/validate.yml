@@ -26,8 +26,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install HTMLHint and CSSLint
-        run: npm install -g htmlhint csslint
+      - name: Install HTMLHint and Stylelint
+        run: npm install -g htmlhint stylelint
 
       - name: Validate HTML files
         run: |
@@ -46,7 +46,7 @@ jobs:
 
             if [ -s "$file" ]; then
               found=1
-              csslint "$file" --quiet
+              stylelint "$file" --config .stylelintrc.json
             fi
           done
 
