@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pinterest style portfolio of Keerthana Vijayakannan, aspiring software developer and graduate trainee at Psiog Digital.">
+  <title>Keerthana Vijayakannan | Portfolio</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += ' js';</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+ 
+  <div class="decor" aria-hidden="true">
+    <svg class="decor-grain" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <filter id="paper-grain" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#paper-grain)"/>
+    </svg>
+
+    <svg class="decor-blob decor-tl" viewBox="0 0 200 200">
+      <path class="blob-coral" d="M0 0 L170 0 C174 22 152 34 134 40 C112 47 108 66 88 76 C66 87 38 78 22 92 C12 100 6 108 0 114 Z"/>
+      <path class="blob-sage" d="M0 124 C18 110 44 114 52 132 C60 150 40 170 0 172 Z"/>
+    </svg>
+
+    <svg class="decor-blob decor-br" viewBox="0 0 200 200">
+      <path class="blob-pink" d="M200 200 L26 200 C22 176 50 160 76 162 C102 164 108 140 128 126 C152 108 180 120 200 102 Z"/>
+    </svg>
+
+    <svg class="decor-sprig decor-sprig-tr" viewBox="0 0 120 190">
+      <path class="stem" d="M110 0 C100 30 70 50 55 90 C45 115 50 150 62 185"/>
+      <ellipse class="leaf" cx="86" cy="38" rx="16" ry="6" transform="rotate(-35 86 38)"/>
+      <ellipse class="leaf" cx="68" cy="66" rx="15" ry="5.5" transform="rotate(25 68 66)"/>
+      <ellipse class="leaf" cx="52" cy="108" rx="15" ry="5.5" transform="rotate(-20 52 108)"/>
+      <ellipse class="leaf" cx="58" cy="144" rx="14" ry="5" transform="rotate(30 58 144)"/>
+      <circle class="bud" cx="84" cy="84" r="8"/>
+      <circle class="bud-core" cx="84" cy="84" r="3.5"/>
+      <circle class="bud" cx="62" cy="178" r="9"/>
+      <circle class="bud-core" cx="62" cy="178" r="4"/>
+    </svg>
+
+    <svg class="decor-sprig decor-sprig-bl" viewBox="0 0 120 190">
+      <path class="stem" d="M20 190 C28 160 36 140 46 110 C54 86 52 50 44 8"/>
+      <path class="stem" d="M38 126 C52 112 70 104 90 100"/>
+      <ellipse class="leaf" cx="30" cy="150" rx="15" ry="5.5" transform="rotate(-30 30 150)"/>
+      <ellipse class="leaf" cx="64" cy="132" rx="15" ry="5.5" transform="rotate(30 64 132)"/>
+      <ellipse class="leaf" cx="54" cy="84" rx="14" ry="5" transform="rotate(-28 54 84)"/>
+      <ellipse class="leaf" cx="36" cy="58" rx="14" ry="5" transform="rotate(28 36 58)"/>
+      <circle class="bud" cx="44" cy="14" r="10"/>
+      <circle class="bud-core" cx="44" cy="14" r="4.5"/>
+      <circle class="bud" cx="92" cy="100" r="9"/>
+      <circle class="bud-core" cx="92" cy="100" r="4"/>
+    </svg>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#hero">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>Keerthana</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#interests">Likings</a></li>
+        <li><a href="#family">Family</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+      <div class="nav-end">
+        <span class="saved-pill"><span aria-hidden="true">&hearts;</span> <span id="saved-count">0</span><span class="sr-only"> saved pins</span></span>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-hello"><span aria-hidden="true">&#10022;</span> hello, i'm</p>
+          <h1>Keerthana <span class="hero-surname">Vijayakannan</span></h1>
+          <p class="hero-tagline">Aspiring Software Developer | Graduate Trainee at Psiog Digital</p>
+          <p class="hero-about">I am a Graduate Trainee at Psiog Digital with an interest in full-stack development, problem-solving and building practical software applications. I enjoy learning new technologies and improving my development skills through hands-on experience.</p>
+
+          <ul class="board-chips">
+            <li><a class="chip tint-pink" href="#journey">Journey</a></li>
+            <li><a class="chip tint-mint" href="#interests">Likings</a></li>
+            <li><a class="chip tint-butter" href="#family">Family</a></li>
+            <li><a class="chip tint-lavender" href="#hobbies">Hobbies</a></li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#journey">Explore My Journey &rarr;</a>
+            <a class="btn btn-ghost" href="#footer">Say hello</a>
+          </div>
+
+          <p class="hero-hint"><span aria-hidden="true">&hearts;</span> tap the heart on any pin to save it</p>
+        </div>
+
+        <div class="collage">
+          <div class="collage-main">
+            <div class="collage-main-inner">
+              <img src="images/hero/Me.png" alt="Illustrated avatar of Keerthana">
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+<!-- Professional Journey -->
+<section id="journey" class="board journey-section">
+  <div class="container">
+
+    <header class="board-head">
+      <span class="board-count">MY GROWTH STORY</span>
+      <h2 class="board-title">Professional Journey</h2>
+      <p class="board-sub">
+        Every milestone has shaped my learning, experiences and ambitions.
+      </p>
+    </header>
+
+    <div class="journey-timeline">
+
+      <!-- School -->
+      <article class="journey-item reveal" data-id="journey-school">
+        <div class="journey-marker">
+          <span>01</span>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-visual school-visual">
+            <svg viewBox="0 0 240 160" role="img" aria-label="School illustration">
+              <circle cx="120" cy="75" r="55" fill="#f8dce7"/>
+              <path d="M65 75 L120 42 L175 75 L120 108 Z" fill="#c38aa8"/>
+              <path d="M78 82 V116 Q120 143 162 116 V82 L120 108 Z" fill="#e9b6cb"/>
+              <path d="M92 72 V47 H148 V72" fill="none" stroke="#805c83" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M105 53 V67 M120 53 V67 M135 53 V67" stroke="#805c83" stroke-width="4"/>
+              <path d="M120 108 V135" stroke="#805c83" stroke-width="4"/>
+              <path d="M103 136 H137" stroke="#805c83" stroke-width="4" stroke-linecap="round"/>
+              <path d="M42 42 L48 32 L54 42 L64 48 L54 54 L48 64 L42 54 L32 48 Z" fill="#e7b65d"/>
+            </svg>
+          </div>
+
+          <div class="journey-content">
+            <span class="journey-stage">ACADEMIC FOUNDATION</span>
+            <h3>School Education</h3>
+            <h4>Lord's Park Matriculation Higher Secondary School</h4>
+            <p>
+              Built a strong academic foundation with consistent performance
+              and dedication towards learning.
+            </p>
+
+            <div class="journey-stats">
+              <div>
+                <strong>99.4%</strong>
+                <span>SSLC</span>
+              </div>
+              <div>
+                <strong>93.8%</strong>
+                <span>HSC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- College -->
+      <article class="journey-item reveal" data-id="journey-college">
+        <div class="journey-marker">
+          <span>02</span>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-visual college-visual">
+            <svg viewBox="0 0 240 160" role="img" aria-label="College graduation illustration">
+              <circle cx="120" cy="78" r="55" fill="#d9eee5"/>
+              <path d="M62 65 L120 34 L178 65 L120 96 Z" fill="#639b83"/>
+              <path d="M82 77 V110 Q120 130 158 110 V77" fill="#91c6ac"/>
+              <path d="M120 96 V119" stroke="#477b67" stroke-width="4"/>
+              <path d="M100 120 H140" stroke="#477b67" stroke-width="4" stroke-linecap="round"/>
+              <path d="M120 34 L120 20" stroke="#477b67" stroke-width="3"/>
+              <path d="M120 20 L151 32 L120 44 Z" fill="#e8b75c"/>
+              <path d="M151 32 V55" stroke="#477b67" stroke-width="3"/>
+              <circle cx="48" cy="43" r="5" fill="#e7b65d"/>
+              <circle cx="188" cy="108" r="6" fill="#e7b65d"/>
+            </svg>
+          </div>
+
+          <div class="journey-content">
+            <span class="journey-stage">UNDERGRADUATE EDUCATION</span>
+            <h3>Engineering Journey</h3>
+            <h4>Sri Krishna College of Technology</h4>
+            <p>
+              Pursued B.E. in Computer Science and Engineering (IoT),
+              exploring programming, software development and emerging technologies.
+            </p>
+
+            <div class="journey-stats">
+              <div>
+                <strong>8.16</strong>
+                <span>CGPA</span>
+              </div>
+              <div>
+                <strong>CSE</strong>
+                <span>IoT Specialization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ed Folio -->
+      <article class="journey-item reveal" data-id="journey-edfolio">
+        <div class="journey-marker">
+          <span>03</span>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-visual project-visual">
+            <svg viewBox="0 0 240 160" role="img" aria-label="Software project illustration">
+              <circle cx="120" cy="78" r="55" fill="#e8e0f6"/>
+              <rect x="57" y="43" width="126" height="83" rx="9" fill="#9278b6"/>
+              <rect x="65" y="51" width="110" height="66" rx="4" fill="#fffaff"/>
+              <rect x="76" y="63" width="42" height="7" rx="3" fill="#b9a4d5"/>
+              <rect x="76" y="78" width="78" height="5" rx="2" fill="#ded4eb"/>
+              <rect x="76" y="89" width="65" height="5" rx="2" fill="#ded4eb"/>
+              <rect x="76" y="101" width="30" height="8" rx="3" fill="#9a83bd"/>
+              <path d="M100 127 L93 139 H147 L140 127" fill="#9278b6"/>
+              <circle cx="158" cy="68" r="9" fill="#e8b75c"/>
+              <path d="M154 68 L157 71 L163 64" fill="none" stroke="white" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="journey-content">
+            <span class="journey-stage">PROJECT EXPERIENCE</span>
+            <h3>Ed Folio</h3>
+            <h4>College Management System</h4>
+            <p>
+              Developed a College Management System by integrating
+              frontend, backend and database technologies.
+            </p>
+
+            <ul class="journey-tech">
+              <li>ReactJS</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Psiog -->
+      <article class="journey-item reveal" data-id="journey-psiog">
+        <div class="journey-marker journey-current">
+          <span>04</span>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-visual career-visual">
+            <svg viewBox="0 0 240 160" role="img" aria-label="Professional career illustration">
+              <circle cx="120" cy="78" r="55" fill="#f9e6d8"/>
+              <rect x="70" y="65" width="100" height="65" rx="9" fill="#d79b76"/>
+              <rect x="83" y="78" width="74" height="42" rx="4" fill="#fff8f1"/>
+              <path d="M105 65 V56 Q105 46 120 46 Q135 46 135 56 V65" fill="none" stroke="#a56c50" stroke-width="6"/>
+              <path d="M110 91 L120 101 L130 91" fill="none" stroke="#b77d60" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="120" cy="88" r="3" fill="#b77d60"/>
+              <path d="M43 43 L48 33 L53 43 L63 48 L53 53 L48 63 L43 53 L33 48 Z" fill="#e8b75c"/>
+              <circle cx="190" cy="110" r="6" fill="#d79b76"/>
+            </svg>
+          </div>
+
+          <div class="journey-content">
+            <span class="journey-stage">CURRENT EXPERIENCE</span>
+            <h3>Graduate Trainee</h3>
+            <h4>Psiog Digital</h4>
+            <p>
+              Beginning my professional journey, gaining practical experience,
+              learning new technologies and developing my skills through
+              hands-on work.
+            </p>
+
+            <ul class="journey-tech">
+              <li>Learning</li>
+              <li>Collaboration</li>
+              <li>Growth</li>
+            </ul>
+
+            <span class="journey-now">Currently Here</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Personal Likings -->
+     <section id="interests" class="board">
+      <div class="container">
+        <header class="board-head">
+          <span class="board-count">A FEW FAVOURITES</span>
+          <h2 class="board-title">Personal Likings</h2>
+          <p class="board-sub">Little things that make ordinary days brighter — stories, flavours, music and places.</p>
+        </header>
+        <div class="masonry interest-gallery">
+          <article class="pin reveal" data-id="like-music"><div class="pin-media ratio-m interest-photo"><img src="https://assets.outpoll.com/img/news/articlephoto/10-New-Songs-Out-Today" alt="Headphones and music listening setup"><button class="pin-save" type="button" aria-label="Save music pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Music</span><h3 class="pin-title"><button class="pin-open" type="button">Music on Repeat</button></h3><p class="pin-desc">A favourite playlist can turn any moment around.</p></div></article>
+          <article class="pin reveal" data-id="like-thrillers"><div class="pin-media ratio-l interest-photo"><img src="https://www.bestsellingpublisher.com/_next/image?q=75&url=%2F_next%2Fstatic%2Fmedia%2F1.816a159f.webp&w=3840" alt="Cinema seats and movie screen"><button class="pin-save" type="button" aria-label="Save crime thrillers pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Movies</span><h3 class="pin-title"><button class="pin-open" type="button">Crime Thrillers</button></h3><p class="pin-desc">Twists, clues and edge-of-the-seat stories.</p>
+        </div><div class="pin-extra" hidden><p>Some favourites: Ratsasan, Drishyam, Kaithi, Vikram Vedha and November Story.</p></div></article>
+          <article class="pin reveal" data-id="like-biriyani"><div class="pin-media ratio-m interest-photo"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/1/8/748ae481-646f-45b4-808e-f5deef169b68_663e29f7-23e3-4231-8e9a-dff625040745.jpg" alt="Aromatic biryani served with accompaniments"><button class="pin-save" type="button" aria-label="Save biryani pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Food</span><h3 class="pin-title"><button class="pin-open" type="button">Biryani</button></h3><p class="pin-desc">Comfort food that is always a yes.</p></div></article>
+          <article class="pin reveal" data-id="like-pavbhaji"><div class="pin-media ratio-m interest-photo"><img src="https://images.deliveryhero.io/image/talabat/MenuItems/Pav_Bhaji638669564560462198.jpg" alt="Indian street food served on a plate"><button class="pin-save" type="button" aria-label="Save pav bhaji pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Food</span><h3 class="pin-title"><button class="pin-open" type="button">Pav Bhaji</button></h3><p class="pin-desc">Buttery, spicy and best enjoyed hot.</p></div></article>
+          <article class="pin reveal" data-id="like-curdrice"><div class="pin-media ratio-m interest-photo"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2025/4/25/0dd360a3-7b05-49aa-b7b0-1a706b9e19dd_7842370c-12a0-4ca9-bc94-901cdf9ff2f6.jpg" alt="Fresh wholesome meal in a bowl"><button class="pin-save" type="button" aria-label="Save curd rice pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Food</span><h3 class="pin-title"><button class="pin-open" type="button">Curd Rice</button></h3><p class="pin-desc">Simple, soothing and the perfect end to a meal.</p></div></article>
+          <article class="pin reveal" data-id="like-kochi"><div class="pin-media ratio-xl interest-photo"><img src="https://miro.medium.com/1%2Aw1976D57NGeVfMlIqKvOpQ.jpeg" alt="Kerala backwaters and tropical landscape"><button class="pin-save" type="button" aria-label="Save Kochi pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Travel · Kerala</span><h3 class="pin-title"><button class="pin-open" type="button">Kochi</button></h3><p class="pin-desc">Coastal charm, heritage streets and peaceful waterfronts.</p></div></article>
+          <article class="pin reveal" data-id="like-palakkad"><div class="pin-media ratio-l interest-photo"><img src="https://hblimg.mmtcdn.com/content/hubble/img/tvdestinationimages/mmt/activities/m_Palakkad_tv_destination_img_7_l_667_1000.jpg" alt="Green countryside landscape"><button class="pin-save" type="button" aria-label="Save Palakkad pin" aria-pressed="false">&hearts;</button></div><div class="pin-body"><span class="pin-tag">Travel · Kerala</span><h3 class="pin-title"><button class="pin-open" type="button">Palakkad</button></h3><p class="pin-desc">Green landscapes and the calm beauty of nature.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family -->
+    <section id="family" class="board">
+      <div class="container">
+        <header class="board-head">
+          <span class="board-count">4 pins</span>
+          <h2 class="board-title">Family</h2>
+          <p class="board-sub">The people who make my life special.</p>
+        </header>
+        <div class="masonry">
+
+          <article class="pin reveal" data-id="family-mom">
+            <div class="pin-media tint-peach ratio-l">
+              <img src="https://img.magnific.com/free-vector/happy-woman-with-brown-hair_24908-82109.jpg?semt=ais_hybrid&w=740&q=80" alt="Illustrated avatar of my mom">
+              <button class="pin-save" type="button" aria-label="Save mom pin" aria-pressed="false">&hearts;</button>
+            </div>
+            <div class="pin-body">
+              <span class="pin-tag">Mom</span>
+              <h3 class="pin-title"><button class="pin-open" type="button">My Mom</button></h3>
+              <p class="pin-desc">The heart of our home and my biggest support.</p>
+            </div>
+          </article>
+
+          <article class="pin reveal" data-id="family-dad">
+            <div class="pin-media tint-sky ratio-m">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcddVa0HbRmqGI2_LPQVgrEIwkkyzTSqc3UbJ63Rutw&s=10" alt="Illustrated avatar of my dad">
+              <button class="pin-save" type="button" aria-label="Save dad pin" aria-pressed="false">&hearts;</button>
+            </div>
+            <div class="pin-body">
+              <span class="pin-tag">Dad</span>
+              <h3 class="pin-title"><button class="pin-open" type="button">My Dad</button></h3>
+              <p class="pin-desc">My guide and constant source of strength.</p>
+            </div>
+          </article>
+
+          <article class="pin reveal" data-id="family-brother">
+            <div class="pin-media tint-butter ratio-l">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOyYITPOQUP31h0rYdfLA9DK2177To7fcsFxSu1WsMQ&s=10" alt="Illustrated avatar of my younger brother">
+              <button class="pin-save" type="button" aria-label="Save younger brother pin" aria-pressed="false">&hearts;</button>
+            </div>
+            <div class="pin-body">
+              <span class="pin-tag">Younger Brother</span>
+              <h3 class="pin-title"><button class="pin-open" type="button">My Younger Brother</button></h3>
+              <p class="pin-desc">My partner in fun and always good for a laugh.</p>
+            </div>
+          </article>
+
+          <article class="pin reveal" data-id="family-me">
+            <div class="pin-media tint-pink ratio-m">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-4INeRhyF_II0xB13Sxd50kg9jq3KUecWEhckDbndow&s=10" alt="Illustrated avatar of me">
+              <button class="pin-save" type="button" aria-label="Save me pin" aria-pressed="false">&hearts;</button>
+            </div>
+            <div class="pin-body">
+              <span class="pin-tag">Me</span>
+              <h3 class="pin-title"><button class="pin-open" type="button">Me</button></h3>
+              <p class="pin-desc">Curious, hardworking and always learning something new.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="board">
+      <div class="container">
+        <header class="board-head">
+          <span class="board-count">2 pins</span>
+          <h2 class="board-title">Hobbies </h2>
+          <p class="board-sub">Tap a pin to read more.</p>
+        </header>
+        <div class="masonry masonry-2">
+
+          <article class="pin reveal" data-id="hobby-gardening">
+            <div class="pin-media tint-mint ratio-l">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqL2doj1nogeC3Zrj69WDwiHewbCSkLJvdPi08hqIt6w&s=10" alt="Illustration of a potted flower plant">
+              <button class="pin-save" type="button" aria-label="Save gardening pin" aria-pressed="false">&hearts;</button>
+            </div>
+            <div class="pin-body">
+              <span class="pin-tag">Hobby</span>
+              <h3 class="pin-title"><button class="pin-open" type="button">Gardening</button></h3>
+              <p class="pin-desc">Growing things, one plant at a time.</p>
+            </div>
+            <div class="pin-extra" hidden>
+              <p>Gardening keeps me calm and grounded. I enjoy spending time with plants and watching them grow.</p>
+            </div>
+          </article>
+
+          <article class="pin reveal" data-id="hobby-music">
+            <div class="pin-media tint-lavender ratio-m">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7LwA-_wnL_uOHIrVKJOoDCEHlpLiqTPC7PsWMrzT3yg&s=10" alt="Illustration of headphones with music notes">
+              <button class="pin-save" type="button" aria-label="Save listening to music pin" aria-pressed="false">&hearts;</button>
+            </div>
+            <div class="pin-body">
+              <span class="pin-tag">Hobby</span>
+              <h3 class="pin-title"><button class="pin-open" type="button">Listening to Music</button></h3>
+              <p class="pin-desc">A good playlist makes everything better.</p>
+            </div>
+            <div class="pin-extra" hidden>
+              <p>Music is my favourite way to unwind. It sets the mood for my day, whether I am relaxing or working.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- pin popup -->
+  <div id="pin-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
+      <div class="modal-media"></div>
+      <div class="modal-text">
+        <span class="pin-tag"></span>
+        <h3 id="modal-title"></h3>
+        <p class="modal-desc"></p>
+        <div class="modal-extra"></div>
+      </div>
+    </div>
+  </div>
+
+  
+<footer id="footer" class="site-footer">
+  <div class="footer-card">
+    <span class="footer-tag">LET'S CONNECT</span>
+
+    <h2>Let's Connect &amp; Create Something Great!</h2>
+    <p>Thanks for stopping by my portfolio. I'd love to connect with you!</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/keerthana-vijayakannan-101160294/"
+         target="_blank" rel="noopener noreferrer"
+         class="social-btn linkedin">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.3 18H5.7V9.5h2.6ZM7 8.3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3ZM18.3 18h-2.6v-4.1c0-1 0-2.2-1.4-2.2s-1.6 1.1-1.6 2.1V18h-2.6V9.5h2.5v1.2h.1a2.8 2.8 0 0 1 2.5-1.4c2.7 0 3.1 1.8 3.1 4.1Z"/>
+        </svg>
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/KeerthanaVijayakannan"
+         target="_blank" rel="noopener noreferrer"
+         class="social-btn github">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.1 3.5 1.5.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-3 0 0 .9-.3 3.1 1.1a10.7 10.7 0 0 1 5.6 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.7.1 3 .7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+
+    <p class="footer-credit">
+      Designed &amp; Built with <span>♥</span> using HTML, CSS &amp; JavaScript
+    </p>
+
+    <div class="footer-divider"></div>
+
+    <p class="copyright">
+      &copy; <span id="year"></span> Keerthana Vijayakannan. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+  <button class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+</body>
+</html>
