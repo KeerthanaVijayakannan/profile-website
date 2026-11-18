@@ -1,0 +1,575 @@
+diff --git a/index.html b/index.html
+index 35df8a6..446ddec 100644
+--- a/index.html
++++ b/index.html
+@@ -1,149 +1,461 @@
+-
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <meta name="description" content="Personal profile website showcasing my professional journey, interests and hobbies.">
+-    <title>My Profile | Personal Website</title>
+-
+-    <link rel="stylesheet" href="css/theme.css">
+-    <link rel="stylesheet" href="css/style.css">
+-
+-    <script src="js/main.js" defer></script>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <meta name="description" content="Pinterest style portfolio of Keerthana Vijayakannan, aspiring software developer and graduate trainee at Psiog Digital.">
++  <title>Keerthana Vijayakannan | Portfolio</title>
++  <link rel="stylesheet" href="css/theme.css">
++  <link rel="stylesheet" href="css/style.css">
++  <script>document.documentElement.className += ' js';</script>
++  <script src="js/main.js" defer></script>
+ </head>
+ <body>
+ 
+-    <!-- Navigation -->
+-    <header>
+-        <nav class="navbar">
+-            <a href="#hero" class="logo">My Profile</a>
++  <!-- watercolor background, blobs and flower sprigs -->
++  <div class="decor" aria-hidden="true">
++    <svg class="decor-grain" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
++      <filter id="paper-grain" x="0" y="0" width="100%" height="100%">
++        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
++        <feColorMatrix type="saturate" values="0"/>
++      </filter>
++      <rect width="100%" height="100%" filter="url(#paper-grain)"/>
++    </svg>
+ 
+-            <button class="menu-toggle" aria-label="Toggle navigation"
+-                aria-expanded="false">
+-                ☰
+-            </button>
++    <svg class="decor-blob decor-tl" viewBox="0 0 200 200">
++      <path class="blob-coral" d="M0 0 L170 0 C174 22 152 34 134 40 C112 47 108 66 88 76 C66 87 38 78 22 92 C12 100 6 108 0 114 Z"/>
++      <path class="blob-sage" d="M0 124 C18 110 44 114 52 132 C60 150 40 170 0 172 Z"/>
++    </svg>
+ 
+-            <ul class="nav-links">
+-                <li><a href="#hero">Home</a></li>
+-                <li><a href="#journey">Journey</a></li>
+-                <li><a href="#interests">Interests</a></li>
+-                <li><a href="#family">Family</a></li>
+-                <li><a href="#hobbies">Hobbies</a></li>
+-            </ul>
+-        </nav>
+-    </header>
++    <svg class="decor-blob decor-br" viewBox="0 0 200 200">
++      <path class="blob-pink" d="M200 200 L26 200 C22 176 50 160 76 162 C102 164 108 140 128 126 C152 108 180 120 200 102 Z"/>
++    </svg>
+ 
+-    <main>
+-        
+-<!-- Hero Section -->
+-<section id="hero" class="hero">
+-    <div class="hero-content">
++    <svg class="decor-sprig decor-sprig-tr" viewBox="0 0 120 190">
++      <path class="stem" d="M110 0 C100 30 70 50 55 90 C45 115 50 150 62 185"/>
++      <ellipse class="leaf" cx="86" cy="38" rx="16" ry="6" transform="rotate(-35 86 38)"/>
++      <ellipse class="leaf" cx="68" cy="66" rx="15" ry="5.5" transform="rotate(25 68 66)"/>
++      <ellipse class="leaf" cx="52" cy="108" rx="15" ry="5.5" transform="rotate(-20 52 108)"/>
++      <ellipse class="leaf" cx="58" cy="144" rx="14" ry="5" transform="rotate(30 58 144)"/>
++      <circle class="bud" cx="84" cy="84" r="8"/>
++      <circle class="bud-core" cx="84" cy="84" r="3.5"/>
++      <circle class="bud" cx="62" cy="178" r="9"/>
++      <circle class="bud-core" cx="62" cy="178" r="4"/>
++    </svg>
+ 
+-        <p class="intro">HELLO, I'M</p>
++    <svg class="decor-sprig decor-sprig-bl" viewBox="0 0 120 190">
++      <path class="stem" d="M20 190 C28 160 36 140 46 110 C54 86 52 50 44 8"/>
++      <path class="stem" d="M38 126 C52 112 70 104 90 100"/>
++      <ellipse class="leaf" cx="30" cy="150" rx="15" ry="5.5" transform="rotate(-30 30 150)"/>
++      <ellipse class="leaf" cx="64" cy="132" rx="15" ry="5.5" transform="rotate(30 64 132)"/>
++      <ellipse class="leaf" cx="54" cy="84" rx="14" ry="5" transform="rotate(-28 54 84)"/>
++      <ellipse class="leaf" cx="36" cy="58" rx="14" ry="5" transform="rotate(28 36 58)"/>
++      <circle class="bud" cx="44" cy="14" r="10"/>
++      <circle class="bud-core" cx="44" cy="14" r="4.5"/>
++      <circle class="bud" cx="92" cy="100" r="9"/>
++      <circle class="bud-core" cx="92" cy="100" r="4"/>
++    </svg>
++  </div>
+ 
+-        <h1>Keerthana<span> Vijayakannan</span></h1>
++  <header class="site-header">
++    <nav class="nav" aria-label="Main navigation">
++      <a class="nav-brand" href="#hero">
++        <span class="brand-mark" aria-hidden="true">K</span>
++        <span>Keerthana</span>
++      </a>
++      <ul class="nav-links" id="nav-links">
++        <li><a href="#hero">Home</a></li>
++        <li><a href="#journey">Journey</a></li>
++        <li><a href="#interests">Likings</a></li>
++        <li><a href="#family">Family</a></li>
++        <li><a href="#hobbies">Hobbies</a></li>
++      </ul>
++      <div class="nav-end">
++        <span class="saved-pill"><span aria-hidden="true">&hearts;</span> <span id="saved-count">0</span><span class="sr-only"> saved pins</span></span>
++        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
++          <span></span>
++          <span></span>
++          <span></span>
++        </button>
++      </div>
++    </nav>
++  </header>
+ 
+-        <h2>Graduate Trainee | Psiog Digital</h2>
++  <main>
+ 
+-        <p class="hero-description">
+-            Passionate about technology, software development
+-            and building meaningful digital experiences.
+-        </p>
++    <!-- Hero -->
++    <section id="hero" class="hero">
++      <div class="container hero-grid">
++        <div class="hero-content">
++          <p class="hero-hello"><span aria-hidden="true">&#10022;</span> hello, i'm</p>
++          <h1>Keerthana <span class="hero-surname">Vijayakannan</span></h1>
++          <p class="hero-tagline">Aspiring Software Developer | Graduate Trainee at Psiog Digital</p>
++          <p class="hero-about">I am a Graduate Trainee at Psiog Digital with an interest in full-stack development, problem-solving and building practical software applications. I enjoy learning new technologies and improving my development skills through hands-on experience.</p>
+ 
+-        <a href="#journey" class="cta-button">
+-            Explore My Journey →
+-        </a>
++          <ul class="board-chips">
++            <li><a class="chip tint-pink" href="#journey">Journey</a></li>
++            <li><a class="chip tint-mint" href="#interests">Likings</a></li>
++            <li><a class="chip tint-butter" href="#family">Family</a></li>
++            <li><a class="chip tint-lavender" href="#hobbies">Hobbies</a></li>
++          </ul>
+ 
+-    </div>
++          <div class="hero-actions">
++            <a class="btn btn-primary" href="#journey">Explore My Journey &rarr;</a>
++            <a class="btn btn-ghost" href="#footer">Say hello</a>
++          </div>
+ 
+-    <div class="hero-visual">
+-        <div class="profile-frame">
+-            <div class="profile-placeholder">
+-                <span>K</span>
++          <p class="hero-hint"><span aria-hidden="true">&hearts;</span> tap the heart on any pin to save it</p>
++        </div>
++
++        <div class="collage">
++          <div class="collage-main">
++            <div class="collage-main-inner">
++              <img src="images/hero/Me.png" alt="Illustrated avatar of Keerthana">
+             </div>
++          </div>
++          
++          
+         </div>
+-        <p class="visual-caption">LEARNING · BUILDING · GROWING</p>
+-    </div>
++      </div>
++    </section>
++
++    <!-- Professional Journey -->
++    <section id="journey" class="board">
++      <div class="container">
++        <header class="board-head">
++          <span class="board-count">4 pins</span>
++          <h2 class="board-title">Professional Journey</h2>
++          <p class="board-sub">School, college and the first steps into software.</p>
++        </header>
++        <div class="masonry">
++
++          <article class="pin reveal" data-id="journey-school">
++            <div class="pin-media tint-pink ratio-m">
++              <div class="stat-row">
++                <div class="stat"><span class="stat-number">99.4%</span><span class="stat-label">SSLC</span></div>
++                <div class="stat"><span class="stat-number">93.8%</span><span class="stat-label">HSC</span></div>
++              </div>
++              <button class="pin-save" type="button" aria-label="Save school pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">School</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Lord's Park Matriculation Higher Secondary School</button></h3>
++              <p class="pin-desc">Completed SSLC with 99.4% and HSC with 93.8%.</p>
++            </div>
++            <div class="pin-extra" hidden>
++              <ul>
++                <li>SSLC: 99.4%</li>
++                <li>HSC: 93.8%</li>
++              </ul>
++            </div>
++          </article>
++
++          <article class="pin reveal" data-id="journey-college">
++            <div class="pin-media tint-mint ratio-s">
++              <div class="stat">
++                <span class="stat-number">8.16</span>
++                <span class="stat-label">CGPA</span>
++              </div>
++              <button class="pin-save" type="button" aria-label="Save college pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">College</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">B.E. Computer Science and Engineering (IoT)</button></h3>
++              <p class="pin-desc">Pursuing my degree at Sri Krishna College of Technology, CGPA 8.16.</p>
++            </div>
++            <div class="pin-extra" hidden>
++              <p>Sri Krishna College of Technology</p>
++            </div>
++          </article>
++
++          <article class="pin reveal" data-id="journey-edfolio">
++            <div class="pin-media tint-lavender ratio-l">
++              <span class="pin-emoji" aria-hidden="true">&#127979;</span>
++              <button class="pin-save" type="button" aria-label="Save Ed Folio pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">College Project</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Ed Folio</button></h3>
++              <p class="pin-desc">Developed a College Management System using ReactJS, Spring Boot and MySQL.</p>
++              <ul class="pin-chips">
++                <li>ReactJS</li>
++                <li>Spring Boot</li>
++                <li>MySQL</li>
++              </ul>
++            </div>
++            <div class="pin-extra" hidden>
++              <ul>
++                <li>ReactJS for the frontend</li>
++                <li>Spring Boot for the backend</li>
++                <li>MySQL for the database</li>
++              </ul>
++            </div>
++          </article>
++
++          <article class="pin reveal" data-id="journey-psiog">
++            <div class="pin-media tint-peach ratio-m">
++              <span class="pin-emoji" aria-hidden="true">&#128188;</span>
++              <button class="pin-save" type="button" aria-label="Save Psiog Digital pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Now</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Graduate Trainee at Psiog Digital</button></h3>
++              <p class="pin-desc">Learning, building and growing as a software developer.</p>
++            </div>
++            <div class="pin-extra" hidden>
++              <p>Interested in full-stack development, problem-solving and building practical software applications, and always learning new technologies through hands-on experience.</p>
++            </div>
++          </article>
++
++        </div>
++      </div>
++    </section>
++
++    <!-- Personal Likings -->
++    <section id="interests" class="board">
++      <div class="container">
++        <header class="board-head">
++          <span class="board-count">7 pins</span>
++          <h2 class="board-title">Personal Likings</h2>
++          <p class="board-sub">Music, movies, food and places I love.</p>
++        </header>
++        <div class="masonry">
++
++          <article class="pin reveal" data-id="like-music">
++            <div class="pin-media tint-lavender ratio-s">
++              <span class="pin-emoji" aria-hidden="true">&#127911;</span>
++              <button class="pin-save" type="button" aria-label="Save music pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Music</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Music on Repeat</button></h3>
++              <p class="pin-desc">Listening to music is a big part of my day.</p>
++            </div>
++          </article>
++
++          <article class="pin reveal" data-id="like-thrillers">
++            <div class="pin-media tint-butter ratio-l">
++              <span class="pin-emoji" aria-hidden="true">&#128373;&#65039;</span>
++              <button class="pin-save" type="button" aria-label="Save crime thrillers pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Movies</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Crime Thrillers</button></h3>
++              <p class="pin-desc">Edge-of-the-seat stories are my favourite to watch.</p>
++            </div>
++            <div class="pin-extra" hidden>
++              <p>My top 5:</p>
++              <ol>
++                <li>Ratsasan</li>
++                <li>Drishyam</li>
++                <li>Kaithi</li>
++                <li>Vikram Vedha</li>
++                <li>Memories</li>
++              </ol>
++            </div>
++          </article>
+ 
++          <article class="pin reveal" data-id="like-biriyani">
++            <div class="pin-media tint-peach ratio-m">
++              <span class="pin-emoji" aria-hidden="true">&#127835;</span>
++              <button class="pin-save" type="button" aria-label="Save biriyani pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Food</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Biriyani</button></h3>
++              <p class="pin-desc">Comfort food, always a yes.</p>
++            </div>
++          </article>
+ 
+-        </section>
++          <article class="pin reveal" data-id="like-pavbhaji">
++            <div class="pin-media tint-pink ratio-s">
++              <span class="pin-emoji" aria-hidden="true">&#127858;</span>
++              <button class="pin-save" type="button" aria-label="Save pav bhaji pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Food</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Pav Bhaji</button></h3>
++              <p class="pin-desc">Buttery, spicy and perfect with soft pav.</p>
++            </div>
++          </article>
+ 
+-        <!-- Professional Journey -->
+-        <section id="journey" class="journey">
+-            <h2>My Professional Journey</h2>
+-            <div class="timeline">
+-                <article class="timeline-item">
+-                    <h3>Graduate Trainee</h3>
+-                    <p class="company">Psiog Digital</p>
+-                    <p>Currently learning, developing technical skills
+-                        and growing through professional experiences.</p>
+-                </article>
++          <article class="pin reveal" data-id="like-curdrice">
++            <div class="pin-media tint-mint ratio-m">
++              <span class="pin-emoji" aria-hidden="true">&#127834;</span>
++              <button class="pin-save" type="button" aria-label="Save curd rice pin" aria-pressed="false">&hearts;</button>
+             </div>
+-        </section>
++            <div class="pin-body">
++              <span class="pin-tag">Food</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Curd Rice</button></h3>
++              <p class="pin-desc">Simple, cool and the best way to end a meal.</p>
++            </div>
++          </article>
+ 
+-        <!-- Personal Interests -->
+-        <section id="interests" class="interests">
+-            <h2>My Personal Likings</h2>
+-            <div class="interest-grid">
++          <article class="pin reveal" data-id="like-kochi">
++            <div class="pin-media tint-sky ratio-xl">
++              <span class="pin-emoji" aria-hidden="true">&#127796;</span>
++              <button class="pin-save" type="button" aria-label="Save Kochi pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Travel &middot; Kerala</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Kochi</button></h3>
++              <p class="pin-desc">A coastal city in Kerala that I have visited.</p>
++            </div>
++          </article>
+ 
+-                <article class="interest-card">
+-                    <h3>Music</h3>
+-                    <p>My favourite music and artists.</p>
+-                </article>
++          <article class="pin reveal" data-id="like-palakkad">
++            <div class="pin-media tint-butter ratio-s">
++              <span class="pin-emoji" aria-hidden="true">&#127806;</span>
++              <button class="pin-save" type="button" aria-label="Save Palakkad pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Travel &middot; Kerala</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Palakkad</button></h3>
++              <p class="pin-desc">Green fields and calm views in Kerala.</p>
++            </div>
++          </article>
+ 
+-                <article class="interest-card">
+-                    <h3>Movies & Series</h3>
+-                    <p>Movies and series I enjoy watching.</p>
+-                </article>
++        </div>
++      </div>
++    </section>
+ 
+-                <article class="interest-card">
+-                    <h3>Food</h3>
+-                    <p>My favourite foods and cuisines.</p>
+-                </article>
++    <!-- Family -->
++    <section id="family" class="board">
++      <div class="container">
++        <header class="board-head">
++          <span class="board-count">4 pins</span>
++          <h2 class="board-title">Family</h2>
++          <p class="board-sub">The people who make my life special.</p>
++        </header>
++        <div class="masonry">
+ 
+-                <article class="interest-card">
+-                    <h3>Travel</h3>
+-                    <p>Places I wish to explore.</p>
+-                </article>
++          <article class="pin reveal" data-id="family-mom">
++            <div class="pin-media tint-peach ratio-l">
++              <img src="images/family/mom.svg" alt="Illustrated avatar of my mom">
++              <button class="pin-save" type="button" aria-label="Save mom pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Mom</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">My Mom</button></h3>
++              <p class="pin-desc">The heart of our home and my biggest support.</p>
++            </div>
++          </article>
+ 
++          <article class="pin reveal" data-id="family-dad">
++            <div class="pin-media tint-sky ratio-m">
++              <img src="images/family/dad.svg" alt="Illustrated avatar of my dad">
++              <button class="pin-save" type="button" aria-label="Save dad pin" aria-pressed="false">&hearts;</button>
+             </div>
+-        </section>
++            <div class="pin-body">
++              <span class="pin-tag">Dad</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">My Dad</button></h3>
++              <p class="pin-desc">My guide and constant source of strength.</p>
++            </div>
++          </article>
+ 
+-        <!-- Family -->
+-        <section id="family" class="family">
+-            <h2>My Family</h2>
+-            <p>The people who make my life special.</p>
++          <article class="pin reveal" data-id="family-brother">
++            <div class="pin-media tint-butter ratio-l">
++              <img src="images/family/brother.svg" alt="Illustrated avatar of my younger brother">
++              <button class="pin-save" type="button" aria-label="Save younger brother pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Younger Brother</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">My Younger Brother</button></h3>
++              <p class="pin-desc">My partner in fun, and always good for a laugh.</p>
++            </div>
++          </article>
+ 
+-            <div class="family-grid">
+-                <!-- Add family cards here when ready -->
++          <article class="pin reveal" data-id="family-me">
++            <div class="pin-media tint-pink ratio-m">
++              <img src="images/family/me.svg" alt="Illustrated avatar of me">
++              <button class="pin-save" type="button" aria-label="Save me pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Me</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Me</button></h3>
++              <p class="pin-desc">Curious, hardworking and always learning something new.</p>
+             </div>
+-        </section>
++          </article>
++
++        </div>
++      </div>
++    </section>
+ 
+-        <!-- Hobbies -->
+-        <section id="hobbies" class="hobbies">
+-            <h2>My Hobbies & Passions</h2>
++    <!-- Hobbies -->
++    <section id="hobbies" class="board">
++      <div class="container">
++        <header class="board-head">
++          <span class="board-count">2 pins</span>
++          <h2 class="board-title">Hobbies </h2>
++          <p class="board-sub">Tap a pin to read more.</p>
++        </header>
++        <div class="masonry masonry-2">
++
++          <article class="pin reveal" data-id="hobby-gardening">
++            <div class="pin-media tint-mint ratio-l">
++              <img src="images/hobbies/gardening.svg" alt="Illustration of a potted flower plant">
++              <button class="pin-save" type="button" aria-label="Save gardening pin" aria-pressed="false">&hearts;</button>
++            </div>
++            <div class="pin-body">
++              <span class="pin-tag">Hobby</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Gardening</button></h3>
++              <p class="pin-desc">Growing things, one plant at a time.</p>
++            </div>
++            <div class="pin-extra" hidden>
++              <p>Gardening keeps me calm and grounded. I enjoy spending time with plants and watching them grow.</p>
++            </div>
++          </article>
+ 
+-            <div class="hobby-gallery">
+-                <article class="hobby-card">
+-                    <h3>Gardening</h3>
+-                    <p>Enjoying nature and nurturing plants.</p>
+-                </article>
++          <article class="pin reveal" data-id="hobby-music">
++            <div class="pin-media tint-lavender ratio-m">
++              <img src="images/hobbies/music.svg" alt="Illustration of headphones with music notes">
++              <button class="pin-save" type="button" aria-label="Save listening to music pin" aria-pressed="false">&hearts;</button>
+             </div>
+-        </section>
++            <div class="pin-body">
++              <span class="pin-tag">Hobby</span>
++              <h3 class="pin-title"><button class="pin-open" type="button">Listening to Music</button></h3>
++              <p class="pin-desc">A good playlist makes everything better.</p>
++            </div>
++            <div class="pin-extra" hidden>
++              <p>Music is my favourite way to unwind. It sets the mood for my day, whether I am relaxing or working.</p>
++            </div>
++          </article>
++
++        </div>
++      </div>
++    </section>
+ 
+-    </main>
++  </main>
++
++  <!-- pin popup -->
++  <div id="pin-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
++    <div class="modal-card">
++      <button class="modal-close" type="button" aria-label="Close">&times;</button>
++      <div class="modal-media"></div>
++      <div class="modal-text">
++        <span class="pin-tag"></span>
++        <h3 id="modal-title"></h3>
++        <p class="modal-desc"></p>
++        <div class="modal-extra"></div>
++      </div>
++    </div>
++  </div>
++
++  <footer id="footer" class="site-footer">
++    <div class="footer-card">
++      <h2>Let's Connect</h2>
++      <p>Thanks for stopping by my board. Say hello!</p>
++      <ul class="social-links">
++        <li><a class="btn btn-ghost" href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener">LinkedIn</a></li>
++        <li><a class="btn btn-ghost" href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub</a></li>
++        <li><a class="btn btn-ghost" href="mailto:your-email@example.com">Email</a></li>
++      </ul>
++      <p class="footer-credit">Built with HTML, CSS &amp; JS | Deployed via GitHub Actions</p>
++      <p>&copy; <span id="year"></span> Keerthana Vijayakannan</p>
++    </div>
++  </footer>
+ 
+-    <!-- Footer -->
+-    <footer id="footer">
+-        <h2>Let's Connect</h2>
+-        <p>
+-            <a href="https://github.com/">GitHub</a>
+-            |
+-            <a href="https://linkedin.com/">LinkedIn</a>
+-        </p>
+-        <p>&copy; 2026 Keerthana. All rights reserved.</p>
+-    </footer>
++  <button class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+ 
+ </body>
+ </html>

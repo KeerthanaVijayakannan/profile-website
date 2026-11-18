@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Potted flower plant">
+  <circle cx="318" cy="104" r="46" fill="#fdf0cf"/>
+  <ellipse cx="200" cy="448" rx="140" ry="18" fill="#ffffff" opacity="0.5"/>
+  <path d="M128 332 L272 332 L254 444 L146 444 Z" fill="#f2b79c"/>
+  <rect x="116" y="312" width="168" height="30" rx="12" fill="#f7c8b0"/>
+  <path d="M200 314 C200 252 198 200 200 150" fill="none" stroke="#7f9f86" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200 272 C150 262 124 232 120 202 C165 207 195 232 200 272 Z" fill="#9bb89b"/>
+  <path d="M200 252 C250 242 276 214 282 184 C236 188 206 214 200 252 Z" fill="#a9c8ae"/>
+  <path d="M200 208 C168 198 152 172 152 148 C184 152 200 177 200 208 Z" fill="#a9c8ae"/>
+  <circle cx="200" cy="96" r="20" fill="#f4a6b8"/>
+  <circle cx="228" cy="112" r="20" fill="#f4a6b8"/>
+  <circle cx="228" cy="144" r="20" fill="#f4a6b8"/>
+  <circle cx="200" cy="160" r="20" fill="#f4a6b8"/>
+  <circle cx="172" cy="144" r="20" fill="#f4a6b8"/>
+  <circle cx="172" cy="112" r="20" fill="#f4a6b8"/>
+  <circle cx="200" cy="128" r="17" fill="#fdf0cf"/>
+  <path d="M74 400 C74 380 78 366 84 352" fill="none" stroke="#7f9f86" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="72" cy="348" rx="14" ry="6" transform="rotate(-30 72 348)" fill="#a9c8ae"/>
+  <ellipse cx="92" cy="344" rx="14" ry="6" transform="rotate(30 92 344)" fill="#9bb89b"/>
+  <path d="M330 410 C330 392 334 380 340 368" fill="none" stroke="#7f9f86" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="328" cy="364" rx="14" ry="6" transform="rotate(-30 328 364)" fill="#9bb89b"/>
+  <ellipse cx="348" cy="360" rx="14" ry="6" transform="rotate(30 348 360)" fill="#a9c8ae"/>
+</svg>
